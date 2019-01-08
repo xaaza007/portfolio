@@ -1,0 +1,71 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JW Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylehseet" type="text/css" media="screen" href="queries.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600i|Roboto:400,500i&amp;subset=latin-ext" rel="stylesheet">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navBar">
+        <a href="#"><ion-icon name="power"></ion-icon></a>
+        <span onclick="openNav()"><ion-icon name="menu"></ion-icon></span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+          </div>
+      </nav>
+
+      <header>
+        <h1 class="anim load-hidden">Dev Jakub Wiśniewski</h1>
+        <p class="anim">Lorem impsum dolot sit amet, dupa dupa cos tam cos tam</p>
+      </header>
+
+      <div class="work">
+        <img class="anim" src="img/img-1.jpg" alt="image1" />
+        <img class="anim" src="img/img-2.jpg" alt="image2" />
+        <img class="anim" src="img/img-7.jpg" alt="image7" />
+        <img class="anim" src="img/img-8.jpg" alt="image8" />
+      </div>
+
+      <div class="header2">
+        <h1 class="anim">Orther Projects</h1>
+        <p class="anim">Lorem ipsum dolor sit amet, dupa dupa cos tam cos tam</p>
+      </div>
+
+      <div class="work2">
+        <img class="anim" src="img/img-4.jpeg" alt="image4" />
+        <img class="anim" src="img/img-5.jpg" alt="image5" />
+      </div>
+
+      <footer><p>Jakub Wiśniewski | Web Design</p></footer>
+    </div>
+
+
+    <!--- Scripts -->
+    <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+    <script type="text/javascript">
+        ScrollReveal().reveal('.anim');
+        ScrollReavel({reset: true});
+    </script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+  </body>
+</html>
